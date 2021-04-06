@@ -1,0 +1,94 @@
+/* pages/landing/landing.wxss */
+.bold {
+  font-weight: 900;
+}
+
+.landing-background {
+  position: absolute;
+  width: 564px;
+  height: 884px;
+  left: -93px;
+  top: -112px;
+
+  background: linear-gradient(180deg, rgba(3, 3, 3, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  background-blend-mode: normal, darken;
+  backdrop-filter: blur(4px);
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.bg {
+  background-image: url('/images/Foodie-Pairing2.PNG');
+}
+
+.landing-title {
+  position: absolute;
+  width: 222px;
+  height: 752px;
+  left: 83px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+  /* background: rgba(0, 0, 0, 0.32);
+  color: #FCF31C;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 70px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+} */
+
+.landing-title2 {
+  position: absolute;
+  width: 159px;
+  height: 18px;
+  left: 108px;
+  top: 489px;
+
+  font-family: Aladin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 78px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* text-align: center; */
+
+  color: #FCF31C;
+}
+/* 
+Do not wanna eat alone?
+
+  position: absolute;
+  width: 206px;
+  height: 139px;
+  left: 83px;
+  top: 144px;
+
+  font-family: Noto Sans SC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 70px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FCF31C;
+
+  backdrop-filter: blur(4px); */
+.button {
+  display: flex;
+  align-items: flex-start;
+  }
+
+.yellow {
+  color: #FCF31C;
+  }

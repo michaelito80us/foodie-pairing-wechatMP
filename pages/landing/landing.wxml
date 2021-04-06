@@ -1,0 +1,11 @@
+<!--pages/landing/landing.wxml-->
+<view class="landing-background" style="background-image: url(/images/Foodie-Pairing2.PNG)">
+
+  <text class="bold">pages/landing/landing.wxml</text>
+  <text class="landing-title">Do not wanna eat alone ?
+  </text>
+  <text class="landing-title2">Foodie Pairing</text>
+  <!-- src /images/foodie.JPEG hgjgjgjgjgukj-->
+  <!-- <image class="background-image" src="{{src}}" mode="cover"></image> -->
+</view>
+<view class="button">Pairing</view>
