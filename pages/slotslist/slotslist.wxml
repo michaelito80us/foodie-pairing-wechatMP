@@ -1,0 +1,8 @@
+<!--pages/slotslist/slotslist.wxml-->
+<view class="container">
+  <view data-id="{{slot.id}}" bindtap="show">
+
+  </view>
+
+</view>
+
