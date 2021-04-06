@@ -9,6 +9,19 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/slotslist/slotslist",
+      "text": "Foodie",
+      "iconPath": "./images/People.png",
+      "selectedIconPath": "./images/People.png"
+    }, {
+      "pagePath": "pages/profile/profile",
+      "text": "Profile",
+      "iconPath": "./images/profile.png",
+      "selectedIconPath": "./images/profile.png"
+    }]
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
