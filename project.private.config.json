@@ -17,6 +17,11 @@
           "pathName": "pages/landing/landing",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/editprofile/editprofile",
+          "pathName": "pages/editprofile/editprofile",
+          "scene": null
         }
       ]
     }
