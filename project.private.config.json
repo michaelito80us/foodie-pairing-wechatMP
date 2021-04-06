@@ -17,6 +17,11 @@
           "pathName": "pages/landing/landing",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "slot list",
+          "pathName": "pages/slotslist/slotslist",
+          "scene": null
         }
       ]
     }
