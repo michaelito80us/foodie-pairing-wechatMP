@@ -1,18 +1,19 @@
 {
   "pages":[
-
     "pages/slotcreation/slotcreation",
     "pages/slotdeatils/slotdetails",
     "pages/bookingdetails/bookingdetails",
-    "pages/slotconfirmation/slotconfirmation"
-
+    "pages/slotconfirmation/slotconfirmation",
+    "pages/profile/profile",
+    "pages/slotslist/slotslist",
+    "pages/landing/landing"
+  ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
-
   "tabBar": {
     "list": [{
       "pagePath": "pages/slotslist/slotslist",
@@ -26,7 +27,6 @@
       "selectedIconPath": "./images/profile.png"
     }]
   },
-
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
