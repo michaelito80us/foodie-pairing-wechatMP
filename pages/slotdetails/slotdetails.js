@@ -5,7 +5,10 @@ Page({
    * Page initial data
    */
   data: {
-
+    // showModal: function(event) {
+    //   this.setData({
+    //     showModalStatus: true
+    //   })
   },
 
   /**

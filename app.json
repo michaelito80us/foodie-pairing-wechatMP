@@ -1,7 +1,7 @@
 {
   "pages":[
     "pages/slotcreation/slotcreation",
-    "pages/slotdeatils/slotdetails",
+    "pages/slotdetails/slotdetails",
     "pages/bookingdetails/bookingdetails",
     "pages/slotconfirmation/slotconfirmation",
     "pages/profile/profile",
