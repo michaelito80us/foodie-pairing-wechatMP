@@ -1,3 +1,9 @@
+@import './font/font.wxss';
+
+.aladin {
+  font-family: 'Aladin', cursive;
+}
+
 /**app.wxss**/
 .container {
   height: 100%;
@@ -8,3 +14,4 @@
   padding: 0 40rpx;
   box-sizing: border-box;
 } 
+
