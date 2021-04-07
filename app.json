@@ -1,10 +1,11 @@
 {
   "pages":[
-    "pages/landing/landing",
-    "pages/slotslist/slotslist",
-    "pages/editprofile/editprofile"
 
-  ],
+    "pages/slotcreation/slotcreation",
+    "pages/slotdeatils/slotdetails",
+    "pages/bookingdetails/bookingdetails",
+    "pages/slotconfirmation/slotconfirmation"
+
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
