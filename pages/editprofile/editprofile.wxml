@@ -1,0 +1,48 @@
+<form bindsubmit="formSubmit">
+  <view class="container">
+    <image class="round-img" src="/images/Foodie-Pairing2.png" ></image>
+    <view class="form-row">
+      <view class="entry-title">Name:</view>
+      <input class="input" name="name" placeholder="Your name" />
+    </view>
+
+    <view class="form-row">
+      <view class="entry-title">Age:</view>
+      <input class="input" name="age" placeholder="Your age" />
+    </view>
+    
+    <view class="form-row">
+      <view class="entry-title">Gender:</view>
+    <input class="input" name="gender" placeholder="Your gender" />
+    </view>
+
+    <view class="form-row">
+      <view class="entry-title">Profession:</view>
+      <input class="input" name="profession" placeholder="Your profession" />
+    </view>
+
+    <view class="form-row">
+      <view class="entry-title">Favourite cuisine:</view>
+      <input class="input" name="cuisine" placeholder="Your favourite cuisine" />
+    </view>
+
+    <view class="form-row">
+      <view class="entry-title">Self-introduction:</view>
+      <view>
+        <textarea class="input txtarea" name="introduction" placeholder="Introduce yourself" />
+      </view>
+    </view>
+
+    
+    
+    
+    
+ 
+    
+  </view>
+
+
+  <view class="btn-area">
+    <button class="sumbit-btn" form-type="submit">Submit</button>
+  </view>
+</form>

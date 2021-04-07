@@ -1,11 +1,11 @@
-// pages/slotslist/slotslist.js
+// pages/editprofile/editprofile.js
 Page({
 
   /**
    * Page initial data
    */
   data: {
-    
+
   },
 
   /**

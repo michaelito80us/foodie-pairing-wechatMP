@@ -19,6 +19,7 @@
           "scene": null
         },
         {
+
           "name": "pages/slotcreation/slotcreation",
           "pathName": "pages/slotcreation/slotcreation",
           "query": "",
@@ -40,6 +41,7 @@
           "name": "slot confirmation",
           "pathName": "pages/slotconfirmation/slotconfirmation",
           "query": "",
+
           "scene": null
         }
       ]

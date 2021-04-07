@@ -1,16 +1,32 @@
 {
   "pages":[
+
     "pages/slotcreation/slotcreation",
     "pages/slotdeatils/slotdetails",
     "pages/bookingdetails/bookingdetails",
     "pages/slotconfirmation/slotconfirmation"
-  ],
+
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
+
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/slotslist/slotslist",
+      "text": "Foodie",
+      "iconPath": "./images/People.png",
+      "selectedIconPath": "./images/People.png"
+    }, {
+      "pagePath": "pages/profile/profile",
+      "text": "Profile",
+      "iconPath": "./images/profile.png",
+      "selectedIconPath": "./images/profile.png"
+    }]
+  },
+
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
