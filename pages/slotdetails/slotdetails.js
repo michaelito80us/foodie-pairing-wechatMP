@@ -1,3 +1,4 @@
+const app = getApp()
 // pages/slotdeatils/slotdetails.js
 Page({
 
@@ -11,10 +12,18 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
-  requestToJoin() {console.log
+  requestToJoin() {
+    console.log
     const id = this.options.id
-    wx.switchTab({
-      url: `/pages/slotslist/slotslist`
+    const url = app.globalData.host[app.globalData.env]
+    const page = this
+
+    console.log(id)
+    
+    wx.showToast({
+      title: 'Request sent',
+      icon: 'success',
+      duration: 1500
     })
   },
   
@@ -33,8 +42,25 @@ Page({
   /**
    * Lifecycle function--Called when page show
    */
-  onShow: function () {
+  onShow: function (options) {
+    //options = {id:1}
+    console.log(123, this.options)
+    const id = this.options.id
+    const url = app.globalData.host[app.globalData.env]
+    const page = this
 
+    console.log({url})
+    console.log(id)
+
+    wx.request({
+      url:`${url}/slots/${id}`,
+      method: 'GET',
+      success(res){
+        console.log(res)
+        //page.setData({slot: res.data.slot})
+        page.setData(res.data)
+      }
+    })
   },
 
   /**

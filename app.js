@@ -18,7 +18,7 @@ App({
     env: 'dev',
     host: {
       dev: "http://localhost:3000/api/v1",
-      prod: "......"
+      prod: "https://foodie-pairing.herokuapp.com/api/v1"
     }
   }
 })

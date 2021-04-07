@@ -1,3 +1,4 @@
+const app = getApp()
 // pages/landing/landing.js
 Page({
 
@@ -62,5 +63,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  goToSlotsPage: function (){
+    wx.switchTab({
+      url: '/pages/slotslist/slotslist',
+    })
   }
 })
