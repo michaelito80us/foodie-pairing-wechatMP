@@ -17,6 +17,30 @@
           "pathName": "pages/landing/landing",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/slotcreation/slotcreation",
+          "pathName": "pages/slotcreation/slotcreation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "slot details",
+          "pathName": "pages/slotdeatils/slotdetails",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "booking details",
+          "pathName": "pages/bookingdetails/bookingdetails",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "slot confirmation",
+          "pathName": "pages/slotconfirmation/slotconfirmation",
+          "query": "",
+          "scene": null
         }
       ]
     }
