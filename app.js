@@ -14,6 +14,11 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    env: 'dev',
+    host: {
+      dev: "http://localhost:3000/api/v1",
+      prod: "......"
+    }
   }
 })
