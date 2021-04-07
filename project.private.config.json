@@ -43,14 +43,26 @@
           "scene": null
         },
         {
+          "name": "slot creation",
+          "pathName": "pages/slotcreation/slotcreation",
+          "query": "",
+          "scene": null
+        },
+        {
           "name": "slots list",
           "pathName": "pages/slotslist/slotslist",
           "query": "",
           "scene": null
         },
         {
+<<<<<<< HEAD
           "name": "landing",
           "pathName": "pages/landing/landing",
+=======
+          "name": "slots list",
+          "pathName": "pages/slotslist/slotslist",
+          "query": "",
+>>>>>>> 033fb88378100264ce252461c65bbe5e20cacf90
           "scene": null
         }
       ]

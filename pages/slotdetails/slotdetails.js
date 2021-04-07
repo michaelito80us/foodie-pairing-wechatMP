@@ -14,7 +14,15 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
+  requestToJoin() {console.log
+    const id = this.options.id
+    wx.switchTab({
+      url: `/pages/slotslist/slotslist`
+    })
+  },
+  
   onLoad: function (options) {
+
 
   },
 

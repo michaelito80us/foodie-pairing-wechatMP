@@ -1,12 +1,12 @@
 {
   "pages":[
+    "pages/landing/landing",
+    "pages/slotslist/slotslist",
+    "pages/profile/profile",
     "pages/slotcreation/slotcreation",
     "pages/slotdetails/slotdetails",
     "pages/bookingdetails/bookingdetails",
-    "pages/slotconfirmation/slotconfirmation",
-    "pages/profile/profile",
-    "pages/slotslist/slotslist",
-    "pages/landing/landing"
+    "pages/slotconfirmation/slotconfirmation"
   ],
   "window":{
     "backgroundTextStyle":"light",
