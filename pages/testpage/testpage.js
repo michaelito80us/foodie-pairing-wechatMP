@@ -1,18 +1,28 @@
-// pages/landing/landing.js
+// pages/testpage/testpage.js
+
+// IMPORTANT::::   ------- don't forget this:
+const app = getApp()
+
 Page({
+
+  // IMPORTANT::: copy this to the page ------> from here:
+  getUserInfo: function (e) {
+    console.log(e)
+    app.globalData.userInfo = e.detail.userInfo
+    this.setData({
+      userInfo: e.detail.userInfo
+    })
+  },
+ // <------------------------------------------ to here
+
 
   /**
    * Page initial data
    */
   data: {
-    src: '/images/Foodie-Pairing2.PNG'
+
   },
 
-  goToHome() {
-    wx.switchTab({
-      url: '/pages/slotslist/slotslist',
-    })
-  },
   /**
    * Lifecycle function--Called when page load
    */

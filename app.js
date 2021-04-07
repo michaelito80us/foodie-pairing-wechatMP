@@ -1,24 +1,39 @@
+let dev;
+// dev = true
+
 // app.js
 App({
-  onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
+  onLaunch: function () {
+    const host = this.getHost()
+    console.log('beginning login')
     wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+      success: (res) => {
+        console.log('res from login', res)
+        wx.request({
+          url: host + 'login',
+          method: 'post',
+          data: {
+            code: res.code
+          },
+          success: (res) => {
+            console.log('res from succesful login', res)
+            console.log('userID', res.data.userId)
+            this.globalData.userId = res.data.userId
+          },
+        })
       }
     })
   },
   globalData: {
     userInfo: null,
-    env: 'dev',
+    env: dev?'dev':'prod',
     host: {
-      dev: "http://localhost:3000/api/v1",
-      prod: "......"
-    }
+      dev: "http://localhost:3000/",
+      prod: "https://foodie-pairing.herokuapp.com/"
+    },
+    api: 'api/v1/'
+  },
+  getHost() {
+    return this.globalData.host[this.globalData.env]
   }
 })
