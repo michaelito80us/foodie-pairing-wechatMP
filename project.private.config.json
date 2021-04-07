@@ -19,7 +19,6 @@
           "scene": null
         },
         {
-
           "name": "pages/slotcreation/slotcreation",
           "pathName": "pages/slotcreation/slotcreation",
           "query": "",
@@ -27,7 +26,7 @@
         },
         {
           "name": "slot details",
-          "pathName": "pages/slotdeatils/slotdetails",
+          "pathName": "pages/slotdetails/slotdetails",
           "query": "",
           "scene": null
         },
@@ -41,7 +40,17 @@
           "name": "slot confirmation",
           "pathName": "pages/slotconfirmation/slotconfirmation",
           "query": "",
-
+          "scene": null
+        },
+        {
+          "name": "slots list",
+          "pathName": "pages/slotslist/slotslist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "landing",
+          "pathName": "pages/landing/landing",
           "scene": null
         }
       ]
