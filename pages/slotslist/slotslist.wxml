@@ -1,0 +1,26 @@
+<view class="cards">
+  <view class="card-product" bindtap="more">
+    <image src="https://images.unsplash.com/photo-1616156104743-0ed6f123d8b8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" />
+    <view class="card-product-infos">
+      <view class="lower-center">
+        <view class="section">
+          <image src="/images/restaurant-11.svg" style="width: 50rpx; height: 50rpx"></image>
+          <text style="padding: 10rpx">Hyatt on the Bund</text>
+        </view>
+
+        <view class="section">
+          <image src="/images/calendar.svg" style="width: 40rpx; height: 40rpx"></image>
+          <text style="padding: 20rpx">11:30 am, 17 April, 2021</text>
+        </view>
+
+        <view class="section">
+          <image src="/images/location.svg" style="width: 50rpx; height: 50rpx"></image>
+          <text style="padding: 10rpx">199 Huangpu Rd, Hongkou District</text>
+        </view>
+    </view>
+
+    </view>
+  </view>
+</view>
+
+

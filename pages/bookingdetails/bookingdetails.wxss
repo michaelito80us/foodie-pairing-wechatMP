@@ -1,0 +1,18 @@
+.slot-img{
+  align-items: center;
+  width: 650rpx;
+  height: 300rpx;
+}
+.round-img{
+  border-radius: 50%;
+  width: 250rpx;
+  height: 250rpx;
+  margin-bottom: 40rpx;
+  display:flex;
+  flex-shrink: 0;
+}
+.lower-center{
+  padding-left: 100rpx;
+  padding-right: 50rpx;
+  padding-top: 50rpx;
+}

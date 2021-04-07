@@ -1,7 +1,10 @@
+let dev;
+dev = true
+
 // app.js
 App({
   onLaunch: function () {
-    const host = 'https://foodie-pairing.herokuapp.com/'
+    const host = this.globalData.host
     console.log('beginning login')
     wx.login({
       success: (res) => {
@@ -22,8 +25,15 @@ App({
     })
   },
   globalData: {
-    // host: 'https://foodie-pairing.herokuapp.com/',
-    // // host: 'htts://localhost:3000/',
-    // api: 'api/v1/'
+    userInfo: null,
+    env: dev?'dev':'prod',
+    host: {
+      dev: "http://localhost:3000/",
+      prod: "https://foodie-pairing.herokuapp.com/"
+    },
+    api: 'api/v1/'
+  },
+  getHost() {
+    return this.globalData.host[this.globalData.env]
   }
 })

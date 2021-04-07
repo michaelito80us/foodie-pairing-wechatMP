@@ -1,0 +1,37 @@
+.slot-img{
+  align-items: center;
+  width: 650rpx;
+  height: 300rpx;
+}
+.round-img{
+  border-radius: 50%;
+  width: 250rpx;
+  height: 250rpx;
+  margin-bottom: 40rpx;
+  display:flex;
+  flex-shrink: 0;
+}
+.lower-center{
+  padding-left: 100rpx;
+  padding-right: 50rpx;
+  padding-top: 5rpx;
+}
+
+.btn-area {
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  padding: 50rpx;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profiledetails {
+  display:flex;
+  padding-top: 100rpx
+}
