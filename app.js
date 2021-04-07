@@ -1,10 +1,10 @@
 let dev;
-dev = true
+// dev = true
 
 // app.js
 App({
   onLaunch: function () {
-    const host = this.globalData.host
+    const host = this.getHost()
     console.log('beginning login')
     wx.login({
       success: (res) => {
@@ -19,7 +19,7 @@ App({
             console.log('res from succesful login', res)
             console.log('userID', res.data.userId)
             this.globalData.userId = res.data.userId
-          }
+          },
         })
       }
     })

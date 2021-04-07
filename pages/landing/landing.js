@@ -8,6 +8,11 @@ Page({
     src: '/images/Foodie-Pairing2.PNG'
   },
 
+  goToHome() {
+    wx.switchTab({
+      url: '/pages/slotslist/slotslist',
+    })
+  },
   /**
    * Lifecycle function--Called when page load
    */
