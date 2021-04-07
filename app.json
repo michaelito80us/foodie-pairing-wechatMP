@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/landing/landing",
-    "pages/slotslist/slotslist"
+    "pages/slotslist/slotslist",
+    "pages/editprofile/editprofile"
+
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -9,6 +11,7 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
+
   "tabBar": {
     "list": [{
       "pagePath": "pages/slotslist/slotslist",
@@ -22,6 +25,7 @@
       "selectedIconPath": "./images/profile.png"
     }]
   },
+
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

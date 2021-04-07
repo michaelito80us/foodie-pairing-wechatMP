@@ -19,8 +19,8 @@
           "scene": null
         },
         {
-          "name": "slot list",
-          "pathName": "pages/slotslist/slotslist",
+          "name": "pages/editprofile/editprofile",
+          "pathName": "pages/editprofile/editprofile",
           "scene": null
         }
       ]
