@@ -53,6 +53,12 @@
           "pathName": "pages/slotslist/slotslist",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "slots list",
+          "pathName": "pages/slotslist/slotslist",
+          "query": "",
+          "scene": null
         }
       ]
     }
