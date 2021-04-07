@@ -8,9 +8,14 @@ Page({
     
   },
 
-  /**
-   * Lifecycle function--Called when page load
-   */
+  more() {
+    console.log('here')
+    const id = this.options.id
+    wx.navigateTo({
+      url: '/pages/slotdetails/slotdetails',
+    })
+  },
+
   onLoad: function (options) {
 
   },

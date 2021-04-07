@@ -34,7 +34,7 @@
 
 
     <view class="btn-area">
-      <button size='mini' style='background-color: yellow' form-type="submit">Create</button>
+      <button bindtap="requestToJoin" size='mini' style='background-color: yellow' form-type="submit">Request to join</button>
     </view>
 
 

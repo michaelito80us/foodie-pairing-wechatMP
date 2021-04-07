@@ -1,12 +1,12 @@
 {
   "pages":[
-    "pages/slotcreation/slotcreation",
-    "pages/slotdeatils/slotdetails",
-    "pages/bookingdetails/bookingdetails",
-    "pages/slotconfirmation/slotconfirmation",
-    "pages/profile/profile",
+    "pages/landing/landing",
     "pages/slotslist/slotslist",
-    "pages/landing/landing"
+    "pages/profile/profile",
+    "pages/slotcreation/slotcreation",
+    "pages/slotdetails/slotdetails",
+    "pages/bookingdetails/bookingdetails",
+    "pages/slotconfirmation/slotconfirmation"
   ],
   "window":{
     "backgroundTextStyle":"light",
