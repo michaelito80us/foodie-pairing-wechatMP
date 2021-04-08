@@ -1,3 +1,4 @@
+
 <view class="container" style="padding:20rpx">
  <image class="slot-img" src="{{slot.restaurant_photo}}"></image>
 
@@ -5,12 +6,35 @@
     <image class="round-img" src="{{slot.user.photo}}" ></image>
     
     <view class="profiledetails">
-      <text>{{slot.user.name}}</text>
-      <image src="/images/more.svg" style="width: 50rpx; height: 50rpx"></image>
-      <view bindtap="more" class="action-btn" wx:if='{{seeMore}}' >hidden profile details</view>
+      <view>{{slot.user.name}}</view>
+      <image src="/images/more.svg"  bindtap='listToggle' style="width: 50rpx; height: 50rpx"></image>
+
     </view>
-    
+    <!-- ====hidden profile details====== -->
+    <block wx:if="{{showMore}}">
+      <view class="form-row d-flex">
+        <view>Age: {{slot.user.age}}</view>
+        <view>Gender: {{slot.user.gender}}</view>
+      </view>
+
+      <view class="form-row">
+        <view >Profession: {{slot.user.profession}}</view>
+      </view>
+
+      <view class="form-row">
+        <view>Favourite cuisine: {{slot.user.favorie_cuisine}}</view>
+      </view>
+
+      <view class="form-row">
+        <view>Self-introduction: {{slot.user.self-introduction}}</view>
+      </view>
+
+    </block>
+
   </view>
+
+    <!-- ====hidden profile details====== -->
+    
     <text class="row-center">
       <image src="/images/people.png" style="width: 100%; height: 100%"></image>
     </text>
@@ -38,7 +62,5 @@
     <view class="btn-area">
       <button bindtap="requestToJoin" size='mini' style='background-color: yellow' form-type="submit">Request to join</button>
     </view>
-
-
   </view>
 </view>
