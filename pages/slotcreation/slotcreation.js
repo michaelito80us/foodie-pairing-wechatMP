@@ -6,11 +6,41 @@ Page({
    */
   data: {
 
+
   },
 
-  /**
-   * Lifecycle function--Called when page load
-   */
+  formSubmit: function(event) {
+
+    const name = event.detail.value.name
+    const date = event.detail.value.date
+    const time = event.detail.value.time
+    const address = event.detail.value.address
+    const userId = getApp().globalData.userId
+    const data = {
+      slot: { 
+        name: name, 
+        date: date,
+        time: time,
+        address: address,
+        user_id: userId
+      }
+    }
+    console.log(data)
+
+    wx.request({
+      url: `localhost:3000/api/v1/users/${userId}/slots`, 
+      method: 'POST',
+      data: data,
+      success(res) {
+        console.log('update res', res)
+        if (res.statusCode === 200) {
+          wx.switchTab({
+            url: '/pages/slotslist/slotslist'
+          })
+        }
+      }
+    })
+  },
   onLoad: function (options) {
 
   },
