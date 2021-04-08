@@ -38,6 +38,7 @@ Page({
    */
   onLoad: function (options) {
     let page = this
+    
     wx.request({
       url: `${url}users/${id}`,
       method: 'GET',

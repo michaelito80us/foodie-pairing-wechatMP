@@ -44,11 +44,14 @@ Page({
   onShow: function () {
     let page = this;
     console.log(123, url)
-
+    let userId = getApp().globalData.userId
+    
+    console.log('ID= ', userId)
     
     wx.request({
       url:`${url}slots`,
       method: 'GET',
+      data: {user_id: userId},
       success(res){
         console.log(res)
         const slots = res.data.slots;
