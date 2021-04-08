@@ -28,6 +28,7 @@ Page({
 
 
   onLoad: function (options) {
+
     },
 
   /**
@@ -58,6 +59,18 @@ Page({
     })
 
 
+    
+    wx.request({
+      url:`${url}slots`,
+      method: 'GET',
+      success(res){
+        console.log(res)
+        const slots = res.data.slots;
+        page.setData({
+          slots: slots
+        })
+      }
+    })
   },
 
   /**

@@ -1,4 +1,7 @@
 // pages/editprofile/editprofile.js
+const app = getApp()
+const url = getApp().getHost() + app.globalData.api
+
 Page({
 
   /**
@@ -7,12 +10,45 @@ Page({
   data: {
 
   },
+  formSubmit: function(event) {
+    console.log('edit', event)
+    const user = event.detail.value
+    console.log(user)
+    // const id = getApp().globalData.userId
+    const id = 11
+    const page = this
+
+    wx.request({
+      url: `${url}users/${id}`,
+      method: 'PUT',
+      data: {user: user},
+      success(res) {
+        console.log('edit profile', res)
+        if (res.statusCode === 200) {
+          wx.switchTab({
+            url: '/pages/profile/profile',
+          })
+        }
+      }
+    })
+  },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    let page = this
+    wx.request({
+      url: `${url}users/${id}`,
+      method: 'GET',
+      success(res) {
+        console.log(res)
+        const user = res.data.user
+        page.setData({
+          user: user
+        })
+      }
+    })
   },
 
   /**

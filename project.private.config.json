@@ -37,10 +37,18 @@
           "scene": null
         },
         {
-          "name": "slot confirmation",
-          "pathName": "pages/slotconfirmation/slotconfirmation",
+
+          "name": "edit profite",
+          "pathName": "pages/editprofile/editprofile",
           "query": "id=1",
           "scene": null
+        },
+        {
+          "name": "profile",
+          "pathName": "pages/profile/profile",
+          "query": "",
+          "scene": null
+
         }
       ]
     }

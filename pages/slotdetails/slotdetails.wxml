@@ -8,10 +8,10 @@
     <view class="profiledetails">
       <view>{{slot.user.name}}</view>
       <image src="/images/more.svg"  bindtap='listToggle' style="width: 50rpx; height: 50rpx"></image>
-
     </view>
+
     <!-- ====hidden profile details====== -->
-    <block wx:if="{{showMore}}">
+    <block class="profiledetails" wx:if="{{showMore}}">
       <view class="form-row d-flex">
         <view>Age: {{slot.user.age}}</view>
         <view>Gender: {{slot.user.gender}}</view>
