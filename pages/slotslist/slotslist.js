@@ -1,4 +1,5 @@
 const app = getApp()
+const url = getApp().getHost() + app.globalData.api
 // pages/slotslist/slotslist.js
 Page({
 
@@ -14,8 +15,14 @@ Page({
    */
   onLoad: function (options) {
     let page = this;
+    // const url = app.globalData.host[app.globalData.env]
+    // const url = getApp().getHost()
+
+    console.log(123, url)
+
+    
     wx.request({
-      url: 'http://localhost:3000/api/v1/slots',
+      url:`${url}slots`,
       method: 'GET',
       success(res){
         console.log(res)

@@ -1,4 +1,5 @@
 const app = getApp()
+const url = getApp().getHost() + app.globalData.api
 // pages/slotdeatils/slotdetails.js
 Page({
 
@@ -15,15 +16,27 @@ Page({
   requestToJoin() {
     console.log
     const id = this.options.id
-    const url = app.globalData.host[app.globalData.env]
     const page = this
-
+    console.log('this:',this)
+    console.log('options',this.options)
     console.log(id)
-    
-    wx.showToast({
-      title: 'Request sent',
-      icon: 'success',
-      duration: 1500
+
+    // const user_id = getApp().globalData.userId
+
+    wx.request({
+      url: `${url}users/${getApp().globalData.userId}/bookings`,
+      method: 'POST',
+      data: {slot_id: id, user_id: getApp().globalData.userId},
+      success(res) {
+        console.log('update res', res)
+        if (res.statusCode == 200) {
+          wx.showToast({
+            title: 'Request sent',
+            icon: 'success',
+            duration: 1500
+          })
+        }
+      }
     })
   },
   
@@ -46,7 +59,7 @@ Page({
     //options = {id:1}
     console.log(123, this.options)
     const id = this.options.id
-    const url = app.globalData.host[app.globalData.env]
+    // const url = app.globalData.host[app.globalData.env]
     const page = this
 
     console.log({url})
