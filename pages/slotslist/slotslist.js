@@ -28,6 +28,20 @@ Page({
 
 
   onLoad: function (options) {
+
+  },
+
+  /**
+   * Lifecycle function--Called when page is initially rendered
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * Lifecycle function--Called when page show
+   */
+  onShow: function () {
     let page = this;
     console.log(123, url)
 
@@ -43,20 +57,6 @@ Page({
         })
       }
     })
-  },
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow: function () {
-
   },
 
   /**

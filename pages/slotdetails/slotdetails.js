@@ -7,7 +7,7 @@ Page({
    * Page initial data
    */
   data: {
-    showMore: true
+    showMore: false
   },
 
   listToggle: function () {
@@ -37,7 +37,14 @@ Page({
           wx.showToast({
             title: 'Request sent',
             icon: 'success',
-            duration: 1500
+            duration: 1500,
+            success(res) {
+              setTimeout(() => {
+                wx.switchTab({
+                  url: '/pages/slotslist/slotslist',
+                })
+              }, 1500);
+            }
           })
         }
       }

@@ -23,13 +23,13 @@
 
     <view class="form-row">
       <view class="entry-title">Favourite cuisine:</view>
-      <input class="input" name="cuisine" placeholder="Your favourite cuisine" />
+      <input class="input" name="favorie_cuisine" placeholder="Your favourite cuisine" />
     </view>
 
     <view class="form-row">
       <view class="entry-title">Self-introduction:</view>
       <view>
-        <textarea class="input txtarea" name="introduction" placeholder="Introduce yourself" />
+        <textarea class="input txtarea" name="self_introduction" placeholder="Introduce yourself" />
       </view>
     </view>
   </view>

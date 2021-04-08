@@ -3,6 +3,7 @@
     "pages/landing/landing",
     "pages/slotslist/slotslist",
     "pages/profile/profile",
+    "pages/editprofile/editprofile",
     "pages/slotcreation/slotcreation",
     "pages/slotdetails/slotdetails",
     "pages/bookingdetails/bookingdetails",
