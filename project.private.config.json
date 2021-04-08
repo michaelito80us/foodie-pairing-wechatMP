@@ -27,6 +27,13 @@
         {
           "name": "slot creation",
           "pathName": "pages/slotcreation/slotcreation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "slot confirmation",
+          "pathName": "pages/slotconfirmation/slotconfirmation",
+          "query": "id=1",
           "scene": null
         }
       ]

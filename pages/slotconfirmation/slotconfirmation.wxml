@@ -4,24 +4,32 @@
   <view class="lower-center">
     <view class="section">
       <image src="/images/restaurant-11.svg" style="width: 50rpx; height: 50rpx"></image>
-      <text style="padding: 10rpx">Hyatt on the Bund</text>
+      <text style="padding: 10rpx" name="name">{{slot.name}}</text>
     </view>
 
     <view class="section">
       <image src="/images/calendar.svg" style="width: 40rpx; height: 40rpx"></image>
-      <text style="padding: 20rpx">11:30 am, 17 April, 2021</text>
+      <text style="padding: 20rpx" name="date">{{slot.date}}</text>
     </view>
 
     <view class="section">
-      <image src="/images/location.svg" style="width: 50rpx; height: 50rpx"></image>
-      <text style="padding: 10rpx">199 Huangpu Rd, Hongkou District</text>
+      <image src="/images/time.svg" style="width: 40rpx; height: 40rpx"></image>
+      <text style="padding: 10rpx" name="time">{{slot.time}}</text>
     </view>
 
-    <map name="" style="padding-top: 50rpx"></map>
+    <view class="section">
+      <image src="/images/location.svg" style="width: 40rpx; height: 40rpx"></image>
+      <text style="padding: 10rpx" name="location">{{slot.location}}</text>
+    </view>
+
+    <view class="section">
+    <text>{{slot.message}}</text>
+    </view>
 
 
     <view class="btn-area">
-      <button size='mini' style='background-color: yellow' form-type="submit">Confrim</button>
+      <button size='mini' style='background-color: yellow' bindtap="acceptBooking">Accept</button>
+      <button size='mini' style='background-color: yellow' bindtap="rejectBooking">Reject</button>
     </view>
 
 
