@@ -1,5 +1,5 @@
 <!--pages/landing/landing.wxml-->
-<view class="landing-background" style="background-image: url(/images/Foodie-Pairing2.PNG)">
+<view class="landing-background" style="background-image: url('https://i1.wp.com/bloggers.society19.com/wp-content/uploads/2015/11/3346d2dad6c1b9fac4b4e2fd111b61cb.jpg?resize=564%2C846&ssl=1')">
   <view class="landing-content">
     <view class="landing-title">Let's get Together !</view>
     <view class="landing-title aladin aladin-size-title">Foodie Pairing</view>
