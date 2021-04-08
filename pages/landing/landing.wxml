@@ -3,7 +3,11 @@
   <view class="landing-content">
     <view class="landing-title">Let's get Together !</view>
     <view class="landing-title aladin aladin-size-title">Foodie Pairing</view>
-    <view class="button" bindtap="goToHome">Pairing</view>
+
+
+    <button class="button" bindtap="goToSlotsPage">Pairing</button>
+
+    <!--  <view class="button" bindtap="goToHome">Pairing</view> -->
   </view>
 </view>
 
