@@ -18,17 +18,17 @@ Page({
     const userId = getApp().globalData.userId
     const data = {
       slot: { 
-        name: name, 
+        restaurant_name: name, 
         date: date,
         time: time,
-        address: address,
+        restaurant_address: address,
         user_id: userId
       }
     }
     console.log(data)
 
     wx.request({
-      url: `localhost:3000/api/v1/users/${userId}/slots`, 
+      url: `http://localhost:3000/api/v1/users/${userId}/slots`, 
       method: 'POST',
       data: data,
       success(res) {
