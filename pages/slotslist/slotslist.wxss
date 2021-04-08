@@ -15,3 +15,9 @@
   display: flex;
   align-items: center;
 }
+.btn-area{
+  display: flex;
+  align-items: center;
+}
+
+

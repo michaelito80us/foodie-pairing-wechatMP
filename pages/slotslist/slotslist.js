@@ -9,9 +9,23 @@ Page({
     
   },
 
-  /**
-   * Lifecycle function--Called when page load
-   */
+
+  more() {
+    const id = this.options.id
+    wx.navigateTo({
+      url: '/pages/slotdetails/slotdetails',
+    })
+  },
+
+  add() {
+    const id = this.options.id
+    wx.navigateTo({
+      url: '/pages/slotcreation/slotcreation',
+    })
+  },
+
+
+
   onLoad: function (options) {
     let page = this;
     wx.request({

@@ -6,14 +6,17 @@ Page({
    * Page initial data
    */
   data: {
-
+    // showModal: function(event) {
+    //   this.setData({
+    //     showModalStatus: true
+    //   })
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   requestToJoin() {
-    console.log
+
     const id = this.options.id
     const url = app.globalData.host[app.globalData.env]
     const page = this
