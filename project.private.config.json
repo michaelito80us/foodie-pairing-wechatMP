@@ -59,6 +59,18 @@
           "pathName": "pages/slotslist/slotslist",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "profile",
+          "pathName": "pages/profile/profile",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "edit/profile",
+          "pathName": "pages/editprofile/editprofile",
+          "query": "",
+          "scene": null
         }
       ]
     }

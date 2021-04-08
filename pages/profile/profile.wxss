@@ -1,1 +1,73 @@
 /* pages/profile/profile.wxss */
+
+.personal-info {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row; */
+  /* align-items: flex-end; */
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+  /* padding-left: 0; */
+  /* align-content: space-between; */
+
+}
+
+.avatar {
+  background: url;
+  border-radius: 75px;
+  width: 300rpx;
+  height: 300rpx;
+  /* display: flex; */
+  /* list-style: none;
+  flex: 0 0 33.333333%; */
+}
+
+.text {
+  /* position: absolute; */
+/* left: 52.8%;
+right: 21.33%;
+top: 9.11%;
+bottom: 76.23%; */
+/* 
+  font-family: Noto Sans SC;
+  font-style: normal; */
+/* font-weight: 500;
+font-size: 12px;
+line-height: 17px; */
+  /* display: flex; */
+  align-items: center;
+  color: #585151;
+}
+
+
+.btn-area {
+  background: #ffffff;
+  /* border-radius: 3px;
+  display: flex;
+  list-style: none; */
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.margin-top {
+  margin-top: 40rpx;
+}
+
+.submit-btn2 {
+  position: absolute;
+  right: 40rpx;
+  top: 0;
+  color: #636363;
+  border-radius: 3px;
+  font-size: 28rpx;
+  margin: 4px 20px;
+  border-radius: 2px;
+  padding: 20rpx 40rpx;
+  min-width: unset !important;
+  width: unset !important;
+  /* display: flex; */
+  /* list-style: none;
+  flex: 0 0 33.333333%; */
+}

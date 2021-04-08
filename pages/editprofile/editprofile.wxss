@@ -20,6 +20,13 @@
   box-sizing: border-box;
 }
 
+.avatar {
+  background: url;
+  border-radius: 75px;
+  width: 300rpx;
+  height: 300rpx;
+}
+
 .round-img{
   border-radius: 50%;
   width: 300rpx;
