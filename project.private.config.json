@@ -37,7 +37,6 @@
           "scene": null
         },
         {
-
           "name": "edit profite",
           "pathName": "pages/editprofile/editprofile",
           "query": "id=1",
@@ -48,7 +47,17 @@
           "pathName": "pages/profile/profile",
           "query": "",
           "scene": null
-
+        },
+        {
+          "name": "booking details",
+          "pathName": "pages/bookingdetails/bookingdetails",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "slot confirmation",
+          "pathName": "pages/slotconfirmation/slotconfirmation",
+          "scene": null
         }
       ]
     }
