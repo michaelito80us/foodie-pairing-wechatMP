@@ -1,3 +1,4 @@
+
 <view class="container">
   <view class="cards">
     <view class="card-product" bindtap="more">
@@ -20,12 +21,15 @@
           </view>
       </view>
 
+
       </view>
     </view>
   </view>
 </view>
+
 <view class="btn-area">
     <button size='mini' style='background-color: yellow' form-type="submit" bindtap="add">Add</button>
   </view>
+
 
 
