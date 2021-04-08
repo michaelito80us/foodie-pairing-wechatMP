@@ -14,7 +14,8 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
-  requestToJoin() {console.log
+  requestToJoin() {
+
     const id = this.options.id
     wx.switchTab({
       url: `/pages/slotslist/slotslist`

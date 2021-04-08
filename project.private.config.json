@@ -1,5 +1,4 @@
 {
-  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -13,56 +12,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/landing/landing",
-          "pathName": "pages/landing/landing",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/slotcreation/slotcreation",
-          "pathName": "pages/slotcreation/slotcreation",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "slot details",
-          "pathName": "pages/slotdetails/slotdetails",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "booking details",
-          "pathName": "pages/bookingdetails/bookingdetails",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "slot confirmation",
-          "pathName": "pages/slotconfirmation/slotconfirmation",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "slot creation",
-          "pathName": "pages/slotcreation/slotcreation",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "slots list",
+          "name": "slotslist",
           "pathName": "pages/slotslist/slotslist",
-          "query": "",
-          "scene": null
-        },
-        {
-<<<<<<< HEAD
-          "name": "landing",
-          "pathName": "pages/landing/landing",
-=======
-          "name": "slots list",
-          "pathName": "pages/slotslist/slotslist",
-          "query": "",
->>>>>>> 033fb88378100264ce252461c65bbe5e20cacf90
           "scene": null
         }
       ]
