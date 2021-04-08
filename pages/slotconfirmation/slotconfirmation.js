@@ -22,18 +22,18 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
+    const that = this
     // wx.showLoading({
     //   title: 'Loading..',
     // })
     wx.request({
-      url: `http://localhost:3000/api/v1/users/${getApp().globalData.userId}/bookings/${this.options.id}`, 
+      url: `http://localhost:3000/api/v1/users/${getApp().globalData.userId}/bookings/${that.options.id}`, 
       method: 'GET',
       success(res){
-        this.setData({
-          name: res.data.name,
-          date: res.data.date,
-          time: res.data.time,
-          location: res.data.location
+        console.log(1,res)
+        that.setData({
+          booking: res.data.bookings,
+          slot: res.data.bookings.slot
         })
         wx.hideLoading({})
       }
@@ -43,8 +43,9 @@ Page({
 
   acceptBooking: function() {
     const booking = {status: 'accepted' }
+    const that = this
     wx.request({
-      url: `http://localhost:3000/api/v1/users/${getApp().globalData.userId}/${this.options.id}/`,
+      url: `http://localhost:3000/api/v1/bookings/${that.options.id}/`,
       data: {booking: booking},
       method: 'PUT',
       success(res) {
@@ -62,8 +63,9 @@ Page({
 
   rejectBooking: function() {
     const booking = {status: 'rejected' }
+    const that = this
     wx.request({
-      url: `http://localhost:3000/api/v1/users/${getApp().globalData.userId}/${this.options.id}/`,
+      url: `http://localhost:3000/api/v1/bookings/${that.options.id}/`,
       data: {booking: booking},
       method: 'PUT',
       success(res) {

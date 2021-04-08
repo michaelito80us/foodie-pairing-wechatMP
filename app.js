@@ -1,5 +1,6 @@
 let dev;
-// dev = true
+dev = true
+dev = true
 
 // app.js
 App({
@@ -25,7 +26,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null,
+    userInfo: {},
     env: dev?'dev':'prod',
     host: {
 
@@ -38,3 +39,5 @@ App({
     return this.globalData.host[this.globalData.env]
   }
 })
+
+

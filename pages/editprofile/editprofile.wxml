@@ -32,15 +32,7 @@
         <textarea class="input txtarea" name="introduction" placeholder="Introduce yourself" />
       </view>
     </view>
-
-    
-    
-    
-    
- 
-    
   </view>
-
 
   <view class="btn-area">
     <button class="sumbit-btn" form-type="submit">Submit</button>

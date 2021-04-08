@@ -31,6 +31,12 @@
           "scene": null
         },
         {
+          "name": "slot detail",
+          "pathName": "pages/slotdetails/slotdetails",
+          "query": "id=1",
+          "scene": null
+        },
+        {
           "name": "slot confirmation",
           "pathName": "pages/slotconfirmation/slotconfirmation",
           "query": "id=1",

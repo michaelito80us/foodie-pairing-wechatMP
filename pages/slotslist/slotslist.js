@@ -1,4 +1,5 @@
 const app = getApp()
+const url = getApp().getHost() + app.globalData.api
 // pages/slotslist/slotslist.js
 Page({
 
@@ -27,19 +28,7 @@ Page({
 
 
   onLoad: function (options) {
-    let page = this;
-    wx.request({
-      url: 'http://localhost:3000/api/v1/slots',
-      method: 'GET',
-      success(res){
-        console.log(res)
-        const slots = res.data.slots;
-        page.setData({
-          slots: slots
-        })
-      }
-    })
-  },
+    },
 
   /**
    * Lifecycle function--Called when page is initially rendered
@@ -52,6 +41,22 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
+    let page = this;
+    console.log(123, url)
+
+    
+    wx.request({
+      url:`${url}slots`,
+      method: 'GET',
+      success(res){
+        console.log(res)
+        const slots = res.data.slots;
+        page.setData({
+          slots: slots
+        })
+      }
+    })
+
 
   },
 
