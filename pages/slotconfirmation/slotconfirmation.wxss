@@ -12,9 +12,11 @@
   flex-shrink: 0;
 }
 .lower-center{
-  padding-left: 100rpx;
-  padding-right: 50rpx;
-  padding-top: 50rpx;
+  width:100%;
+  margin-top: 50rpx;
+}
+.lower-center .section{
+  padding-left: 20rpx;
 }
 
 .btn-area {
@@ -22,3 +24,4 @@
   display: flex;
   justify-content: space-between;
 }
+

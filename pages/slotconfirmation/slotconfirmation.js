@@ -1,10 +1,6 @@
-// pages/slotconfirmation/slotconfirmation.js
 Page({
-
-  /**
-   * Page initial data
-   */
   data: {
+  
 
   },
 
@@ -26,9 +22,64 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    const that = this
+    // wx.showLoading({
+    //   title: 'Loading..',
+    // })
+    wx.request({
+      url: `http://localhost:3000/api/v1/users/${getApp().globalData.userId}/bookings/${that.options.id}`, 
+      method: 'GET',
+      success(res){
+        console.log(1,res)
+        that.setData({
+          booking: res.data.bookings,
+          slot: res.data.bookings.slot
+        })
+        wx.hideLoading({})
+      }
+    })
+  
   },
 
+  acceptBooking: function() {
+    const booking = {status: 'accepted' }
+    const that = this
+    wx.request({
+      url: `http://localhost:3000/api/v1/bookings/${that.options.id}/`,
+      data: {booking: booking},
+      method: 'PUT',
+      success(res) {
+        console.log('update res', res)
+        if (res.statusCode === 200) {
+          wx.switchTab({
+            url: '/pages/profile/profile'
+          })
+        }
+      }
+      })
+
+    
+  },
+
+  rejectBooking: function() {
+    const booking = {status: 'rejected' }
+    const that = this
+    wx.request({
+      url: `http://localhost:3000/api/v1/bookings/${that.options.id}/`,
+      data: {booking: booking},
+      method: 'PUT',
+      success(res) {
+        console.log('update res', res)
+        if (res.statusCode === 200) {
+          wx.switchTab({
+            url: '/pages/profile/profile'
+          })
+        }
+      }
+      })
+
+    
+  },
   /**
    * Lifecycle function--Called when page hide
    */

@@ -29,7 +29,7 @@ Page({
 
   onLoad: function (options) {
 
-  },
+    },
 
   /**
    * Lifecycle function--Called when page is initially rendered
@@ -44,6 +44,20 @@ Page({
   onShow: function () {
     let page = this;
     console.log(123, url)
+
+    
+    wx.request({
+      url:`${url}slots`,
+      method: 'GET',
+      success(res){
+        console.log(res)
+        const slots = res.data.slots;
+        page.setData({
+          slots: slots
+        })
+      }
+    })
+
 
     
     wx.request({
