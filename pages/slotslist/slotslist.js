@@ -29,9 +29,6 @@ Page({
 
   onLoad: function (options) {
     let page = this;
-    // const url = app.globalData.host[app.globalData.env]
-    // const url = getApp().getHost()
-
     console.log(123, url)
 
     

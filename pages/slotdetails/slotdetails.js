@@ -1,16 +1,19 @@
+// pages/slotdeatils/slotdetails.js
 const app = getApp()
 const url = getApp().getHost() + app.globalData.api
-// pages/slotdeatils/slotdetails.js
 Page({
 
   /**
    * Page initial data
    */
   data: {
-    // showModal: function(event) {
-    //   this.setData({
-    //     showModalStatus: true
-    //   })
+    showMore: true
+  },
+
+  listToggle: function () {
+    this.setData({
+      showMore: !this.data.showMore
+    })
   },
 
   /**
@@ -23,8 +26,6 @@ Page({
     console.log('this:',this)
     console.log('options',this.options)
     console.log(id)
-
-    // const user_id = getApp().globalData.userId
 
     wx.request({
       url: `${url}users/${getApp().globalData.userId}/bookings`,
@@ -62,7 +63,6 @@ Page({
     //options = {id:1}
     console.log(123, this.options)
     const id = this.options.id
-    // const url = app.globalData.host[app.globalData.env]
     const page = this
 
     console.log({url})

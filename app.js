@@ -1,5 +1,6 @@
 let dev;
 dev = true
+dev = true
 
 // app.js
 App({
@@ -38,3 +39,5 @@ App({
     return this.globalData.host[this.globalData.env]
   }
 })
+
+
