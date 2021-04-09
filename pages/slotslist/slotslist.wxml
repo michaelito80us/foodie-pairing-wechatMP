@@ -6,17 +6,17 @@
       <view class="lower-center">
         <view class="section">
           <image src="/images/restaurant-11.svg" style="width: 50rpx; height: 50rpx"></image>
-          <text style="padding: 10rpx">{{slot.restaurant_name}}</text>
+          <text style="padding: 30rpx">{{slot.restaurant_name}}</text>
         </view>
 
         <view class="section">
-          <image src="/images/calendar.svg" style="width: 40rpx; height: 40rpx"></image>
-          <text style="padding: 20rpx">{{slot.time}}{{slot.date}}</text>
+          <image src="/images/calendar.svg" style="width: 50rpx; height: 50rpx"></image>
+          <text style="padding: 20rpx">{{slot.time}}   -   {{slot.date}}</text>
         </view>
 
         <view class="section">
           <image src="/images/location.svg" style="width: 50rpx; height: 50rpx"></image>
-          <text style="padding: 10rpx">{{slot.restaurant_address}}</text>
+          <text style="padding: 30rpx">{{slot.restaurant_address}}</text>
         </view>
       </view>
     </view>

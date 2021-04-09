@@ -1,12 +1,11 @@
 let dev;
 dev = true
-dev = true
 
 // app.js
 App({
   onLaunch: function () {
     const host = this.getHost()
-    console.log('beginning login')
+    console.log('beginning login', host)
     wx.login({
       success: (res) => {
         console.log('res from login', res)
