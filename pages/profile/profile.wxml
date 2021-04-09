@@ -13,7 +13,60 @@
         <button class="submit-btn2" form-type="submit">Edit</button>
       <!-- </view> -->
   </view>
+  <view>
+    <view class="Looking for">
+      <view class="text">I'm looking for</view>
+        <view>
+          <view>
+            <view>
+              <view class="location"></view>
+              <view class="section">
+                <image src="/images/restaurant-11.svg" style="width: 50rpx; height: 50rpx"></image>
+                  <text style="padding: 10rpx">Hyatt on the Bund</text>
+        </view>
 
+              <view class="section">
+                <image src="/images/calendar.svg" style="width: 40rpx; height: 40rpx"></image>
+                  <text style="padding: 20rpx">11:30 am, 17 April, 2021</text>
+        </view>
+              <!-- <view class="text">Date for appointment</view>
+              <view class="section">
+                <image src="/images/restaurant-11.svg" style="width: 50rpx; height: 50rpx"></image>
+                  <text style="padding: 10rpx">Salée Bar & Café</text>
+        </view>
+
+              <view class="section">
+                <image src="/images/calendar.svg" style="width: 40rpx; height: 40rpx"></image>
+                  <text style="padding: 20rpx">11:30 am, 20 April, 2021</text>
+        </view> -->
+            </view>
+          </view>
+        </view>
+  </view>
+    
+
+    </view>
+    <view class="Booking for">
+     <view class="text">I'm booked for</view>
+     <view>
+       <view>
+         <view>
+          <view class="date"></view>
+              <view class="section">
+                <image src="/images/restaurant-11.svg" style="width: 50rpx; height: 50rpx"></image>
+                  <text style="padding: 10rpx">Salée Bar & Café</text>
+                    <button class="Push Button">Action Required</button>
+        </view>
+
+              <view class="section">
+                <image src="/images/calendar.svg" style="width: 40rpx; height: 40rpx"></image>
+                  <text style="padding: 20rpx">11:30 am, 20 April, 2021</text>
+                    <button class="Push Button">Action Required</button>
+        </view>
+         </view>
+       </view>
+     </view>
+    </view>
 </view>
 
 <!-- 
