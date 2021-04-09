@@ -57,12 +57,13 @@
         {
           "name": "slot confirmation",
           "pathName": "pages/slotconfirmation/slotconfirmation",
-          "query": "",
+          "query": "id=24",
           "scene": null
         },
         {
           "name": "test page",
           "pathName": "pages/testpage/testpage",
+          "query": "",
           "scene": null
         }
       ]
