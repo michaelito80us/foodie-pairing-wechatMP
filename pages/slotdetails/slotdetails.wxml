@@ -1,66 +1,74 @@
 
-<view class="container" style="padding:20rpx">
- <image class="slot-img" src="{{slot.restaurant_photo}}"></image>
+<view class="container slot-container" style="padding:20rpx">
+ <!-- <image class="slot-img" src="{{slot.restaurant_photo}}"></image> -->
+ <image class="slot-img w100" src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/209985b63385003cc6a626d6233e8e023e3d6a8398da828908bd14c1d1c0b998daf273d519aabf47d49b41546bc11dfb?pictype=scale&from=30113&version=3.3.3.3&uin=2570562508&fname=bd3f8a08a840d24ee1f892bb6fb13a16.jpg&size=750"></image>
 
-  <view class="profile" style="padding:20rpx">
-    <image class="round-img" src="{{slot.user.photo}}" ></image>
-    
-    <view class="profiledetails">
-      <view>{{slot.user.name}}</view>
-      <image src="/images/more.svg"  bindtap='listToggle' style="width: 50rpx; height: 50rpx"></image>
+
+  <view class="profile-short w100" >
+
+    <view class="user-pix">
+      <image class="round-img" src="{{slot.user.photo}}" ></image>
     </view>
-
-    <!-- ====hidden profile details====== -->
-    <block class="profiledetails" wx:if="{{showMore}}">
-      <view class="form-row d-flex">
-        <view>Age: {{slot.user.age}}</view>
-        <view>Gender: {{slot.user.gender}}</view>
+    
+    <view class="name-section" bindtap='listToggle'>
+      <view class="user-name">
+        <view>{{slot.user.name}}</view>
       </view>
-
-      <view class="form-row">
-        <view >Profession: {{slot.user.profession}}</view>
+  
+      <view class="btn-more {{showMore?'more-transform':''}}">
+        <image src="/images/more.svg" style="width: 50rpx; height: 50rpx"></image>
       </view>
-
-      <view class="form-row">
-        <view>Favourite cuisine: {{slot.user.favorie_cuisine}}</view>
-      </view>
-
-      <view class="form-row">
-        <view>Self-introduction: {{slot.user.self-introduction}}</view>
-      </view>
-
-    </block>
-
+    </view>
   </view>
 
-    <!-- ====hidden profile details====== -->
+  <view class="profile-long" wx:if="{{showMore}}">
+    <view class="form-row d-flex">
+      <view>Age: {{slot.user.age}}</view>
+      <view>Gender: {{slot.user.gender}}</view>
+    </view>
+
+    <view class="form-row">
+      <view >Profession: {{slot.user.profession}}</view>
+    </view>
+
+    <view class="form-row">
+      <view>Favourite cuisine: {{slot.user.favorie_cuisine}}</view>
+    </view>
+
+    <view class="form-row">
+      <view>Self-introduction: {{slot.user.self-introduction}}</view>
+    </view>
+  </view>
     
-    <text class="row-center">
+      <text class="row-center">
       <image src="/images/people.png" style="width: 100%; height: 100%"></image>
     </text>
 
   <view class="lower-center">
     <view class="section">
-      <image src="/images/restaurant-11.svg" style="width: 50rpx; height: 50rpx"></image>
+      <image src="/images/restaurant.svg" class="slot-details-icon"></image>
       <text style="padding: 10rpx">{{slot.restaurant_name}}</text>
     </view>
 
     <view class="section">
-      <image src="/images/calendar.svg" style="width: 40rpx; height: 40rpx"></image>
+      <image src="/images/calendar.svg" class="slot-details-icon"></image>
       <text style="padding: 20rpx">{{slot.time}}{{slot.date}}</text>
     </view>
 
     <view class="section">
-      <image src="/images/location.svg" style="width: 50rpx; height: 50rpx"></image>
+      <image src="/images/location.svg" class="slot-details-icon"></image>
       <text style="padding: 10rpx">{{slot.restaurant_address}}</text>
     </view>
 
     <view class="section">
-      <text style="padding: 10rpx">{{slot.message}}</text>
-    </view>
-
-    <view class="btn-area">
-      <button bindtap="requestToJoin" size='mini' style='background-color: yellow' form-type="submit">Request to join</button>
+      <image src="/images/message.svg" class="slot-details-icon"></image>
+      <text style="padding: 10rpx">{{slot.message||'-'}}</text>
     </view>
   </view>
+
+  <view class="btn-area">
+    <button bindtap="requestToJoin" size='mini' style='background-color: yellow' form-type="submit">Request to join</button>
+  </view>
+
+  <view style="height: 100rpx;"></view>
 </view>

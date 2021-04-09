@@ -11,10 +11,59 @@
   display:flex;
   flex-shrink: 0;
 }
+
+.w100 {
+  width: 100%
+}
+
+.profile-long {
+  width: 100%;
+  padding: 40rpx;
+  background-color: #ececec;
+  border-radius: 30rpx;
+  box-sizing: border-box;
+  margin-bottom: 50rpx;
+}
+
+.slot-container {
+  box-sizing: border-box;
+  padding-left: 50rpx !important;
+  padding-right: 50rpx !important;
+}
+
+.user-name {
+  margin-left: 30rpx;
+  font-weight: bold;
+}
+
+.slot-details-icon {
+  width: 40rpx;
+  height: 40rpx;
+  flex-shrink: 0;
+  margin-right: 20rpx;
+}
+
 .lower-center{
-  padding-left: 100rpx;
-  padding-right: 50rpx;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  width: 100%;
   padding-top: 5rpx;
+}
+
+.section {
+  margin-bottom: 20rpx;
+}
+
+.name-section {
+  display: flex;
+}
+
+.btn-more {
+  transition: 0.3s;
+}
+
+.more-transform {
+  transform: rotate(180deg);
 }
 
 .btn-area {
@@ -23,12 +72,15 @@
   justify-content: space-between;
 }
 
-.profile {
-  padding: 50rpx;
-  width: 80vw;
+.btn-area button {
+  padding: 20rpx 50rpx !important;
+}
+
+.profile-short {
+  padding-top: 50rpx;  
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .profiledetails {
