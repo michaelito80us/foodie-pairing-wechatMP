@@ -1,5 +1,5 @@
 <!--pages/landing/landing.wxml-->
-<view class="landing-background" style="background-image: url('https://i1.wp.com/bloggers.society19.com/wp-content/uploads/2015/11/3346d2dad6c1b9fac4b4e2fd111b61cb.jpg?resize=564%2C846&ssl=1')">
+<view class="landing-background" style="background-image: url('https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/18ed7c1833ff45ba898b4a07b6cdc65c91bb307cfb127a0386c3e8fefceb8a88a0616fcfc035bd4753f9fce5cb9c1077?pictype=scale&from=30113&version=3.3.3.3&uin=2570562508&fname=bea68e789bd4d02f6995c5457208f735.jpg&size=750')">
   <view class="landing-content">
     <view class="landing-title">Let's get Together !</view>
     <view class="landing-title aladin aladin-size-title">Foodie Pairing</view>
