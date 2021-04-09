@@ -4,7 +4,7 @@
   <view class="lower-center">
     <view class="section">
       <image src="/images/restaurant-11.svg" style="width: 50rpx; height: 50rpx"></image>
-      <text style="padding: 10rpx" name="restaurant_name">{{slot.restaurant_name}}</text>
+      <view class="restaurant-name" name="restaurant_name">{{slot.restaurant_name}}</view>
     </view>
 
     <view class="section">
@@ -27,13 +27,13 @@
     </view>
 
 
-    <view class="btn-area">
+    <view class="btn-area" style="margin-top: 150rpx;">
       <block wx:if="{{booking.status=='new'}}">
         <button size='mini' style='background-color: yellow' bindtap="acceptBooking">Accept</button>
         <button size='mini' style='background-color: yellow' bindtap="rejectBooking">Reject</button>
       </block>
-      <view wx:if="{{booking.status=='accepted'}}">Accepted</view>
-      <view wx:if="{{booking.status=='rejected'}}">Rejected</view>
+      <view wx:if="{{booking.status=='accepted'}}" class="pill-green">Accepted</view>
+      <view wx:if="{{booking.status=='rejected'}}" class="pill-red">Rejected</view>
     </view>
 
 
