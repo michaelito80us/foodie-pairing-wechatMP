@@ -1,6 +1,6 @@
 // pages/editprofile/editprofile.js
 const app = getApp()
-const url = getApp().getHost() + app.globalData.api
+const url = getApp().getHost()
 
 Page({
 

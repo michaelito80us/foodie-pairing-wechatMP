@@ -28,7 +28,7 @@ Page({
     // })
     const userId = getApp().globalData.userId
     
-    const url = `http://localhost:3000/api/v1/users/${userId}/bookings/${that.options.id}`
+    const url = getApp().getHost() + `users/${userId}/bookings/${that.options.id}`
     console.log('url', url)
 
     wx.request({
@@ -50,7 +50,7 @@ Page({
     const booking = {status: 'accepted' }
     const that = this
     wx.request({
-      url: `http://localhost:3000/api/v1/bookings/${that.options.id}/`,
+      url: getApp().getHost() + `/bookings/${that.options.id}/`,
       data: {booking: booking},
       method: 'PUT',
       success(res) {
@@ -70,7 +70,7 @@ Page({
     const booking = {status: 'rejected' }
     const that = this
     wx.request({
-      url: `http://localhost:3000/api/v1/bookings/${that.options.id}/`,
+      url: getApp().getHost() + `bookings/${that.options.id}/`,
       data: {booking: booking},
       method: 'PUT',
       success(res) {

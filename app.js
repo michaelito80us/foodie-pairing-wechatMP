@@ -1,10 +1,10 @@
 let dev;
-dev = true
+// dev = true
 
 // app.js
 App({
   onLaunch: function () {
-    const host = this.getHost()
+    const host = this.getRoot()
     console.log('beginning login', host)
     wx.login({
       success: (res) => {
@@ -34,8 +34,13 @@ App({
     },
     api: 'api/v1/'
   },
-  getHost() {
+
+  getRoot() {
     return this.globalData.host[this.globalData.env]
+  },
+
+  getHost() {
+    return this.getRoot() + this.globalData.api
   }
 })
 

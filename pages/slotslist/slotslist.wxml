@@ -1,22 +1,22 @@
   
 <view class="cards">
   <view class="card-product" bindtap="goToSlotDetails" wx:for="{{slots}}" wx:for-item="slot" data-id="{{slot.id}}">
-    <image src="slot.restaurant_photo" />
+    <!-- <image src="slot.restaurant_photo" /> -->
     <view class="card-product-infos">
       <view class="lower-center">
         <view class="section">
-          <image src="/images/restaurant-11.svg" style="width: 50rpx; height: 50rpx"></image>
-          <text style="padding: 30rpx">{{slot.restaurant_name}}</text>
+          <image src="/images/restaurant.svg" class="card-icon"></image>
+          <view>{{slot.restaurant_name}}</view>
         </view>
 
         <view class="section">
-          <image src="/images/calendar.svg" style="width: 50rpx; height: 50rpx"></image>
-          <text style="padding: 20rpx">{{slot.time}}   -   {{slot.date}}</text>
+          <image src="/images/calendar.svg" class="card-icon"></image>
+          <view>{{slot.time}}   -   {{slot.date}}</view>
         </view>
 
         <view class="section">
-          <image src="/images/location.svg" style="width: 50rpx; height: 50rpx"></image>
-          <text style="padding: 30rpx">{{slot.restaurant_address}}</text>
+          <image src="/images/location.svg" class="card-icon"></image>
+          <view>{{slot.restaurant_address}}</view>
         </view>
       </view>
     </view>
