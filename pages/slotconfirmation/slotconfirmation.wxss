@@ -22,6 +22,6 @@
 .btn-area {
   margin-top: 50rpx;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 

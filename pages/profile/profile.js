@@ -7,6 +7,18 @@ Page({
   data: {
 
   },
+  goToBookingDetails(e) {
+    wx.navigateTo({
+      url: `/pages/slotconfirmation/slotconfirmation?id=${e.currentTarget.dataset.id}`,
+    })
+  },
+
+  goToConfirmedBooking(e) {
+    wx.navigateTo({
+      url: `/pages/slotconfirmation/slotconfirmation?id=${e.currentTarget.dataset.id}`,
+    })
+  },
+  
 
   /**
    * Lifecycle function--Called when page load
@@ -26,7 +38,27 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    const that = this
+    // wx.showLoading({
+    //   title: 'Loading..',
+    // })
+    // const userId = getApp().globalData.userId
+  
+    // const url = `http://localhost:3000/api/v1/users/${userId}`
+    const url = `http://localhost:3000/api/v1/users/4`
+    wx.request({
+      url: url, 
+      method: 'GET',
+      success(res){
+        console.log(res, "dfd")
+        that.setData({
+          user: res.data.user
+          // restaurant_name: res.user.pendingbookings.restaurant_name,
+          // date: res.user.pendingbookings.date
+        })
+        wx.hideLoading({})
+      }
+    })
   },
 
   /**
