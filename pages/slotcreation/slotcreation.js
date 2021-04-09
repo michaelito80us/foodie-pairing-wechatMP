@@ -1,6 +1,7 @@
 // pages/slotcreation/slotcreation.js
+const app = getApp()
+const url = getApp().getHost() + app.globalData.api
 Page({
-
   /**
    * Page initial data
    */
@@ -15,6 +16,7 @@ Page({
     const date = event.detail.value.date
     const time = event.detail.value.time
     const address = event.detail.value.address
+    const message = event.detail.value.message
     const userId = getApp().globalData.userId
     const data = {
       slot: { 
@@ -22,13 +24,14 @@ Page({
         date: date,
         time: time,
         restaurant_address: address,
+        message: message,
         user_id: userId
       }
     }
     console.log(data)
 
     wx.request({
-      url: `http://localhost:3000/api/v1/users/${userId}/slots`, 
+      url: `${url}users/${userId}/slots`, 
       method: 'POST',
       data: data,
       success(res) {
@@ -41,6 +44,20 @@ Page({
       }
     })
   },
+  changeDate(e) {
+    this.setData({
+      selectedDate: e.detail.value
+    })
+  },
+
+  changeTime(e) {
+    this.setData({ 
+      selectedTime: e.detail.value
+    })
+  },
+
+
+
   onLoad: function (options) {
 
   },
