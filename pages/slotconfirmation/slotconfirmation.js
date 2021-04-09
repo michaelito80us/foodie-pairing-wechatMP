@@ -26,8 +26,13 @@ Page({
     // wx.showLoading({
     //   title: 'Loading..',
     // })
+    const userId = getApp().globalData.userId
+    
+    const url = `http://localhost:3000/api/v1/users/${userId}/bookings/${that.options.id}`
+    console.log('url', url)
+
     wx.request({
-      url: `http://localhost:3000/api/v1/users/${getApp().globalData.userId}/bookings/${that.options.id}`, 
+      url: url, 
       method: 'GET',
       success(res){
         console.log(1,res)

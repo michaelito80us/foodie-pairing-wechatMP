@@ -1,2 +1,47 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class="container" style="padding: 40rpx; box-sizing: border-box;">
+  <view class="row-top" style="margin-top: 20rpx; margin-bottom: 100rpx;">
+    <!-- <view class="avatar-container">
+      <image bindtap="profile" class="round-img" src="/images/people.svg" ></image>
+    </view> -->
+    <open-data type="userAvatarUrl" class="profile-avatar"></open-data>
+  </view>
+
+  <view style="width: 100%; box-sizing: border-box;">
+    <view class="section" style="margin-bottom: 80rpx;">
+        <view class="slot">Awaiting reply</view>
+        <view bindtap="goToBookingDetails" class="bookingDetails "wx:for="{{user.pendingbookings}}" wx:for-item="booking" data-id="{{booking.id}}">
+          <view class="lower-center">
+            <view class="fork" style="display: flex">
+              <image src="/images/restaurant-11.svg" class="card-icon"></image>
+              <view class="preview" name="restaurant_name">{{booking.slot.restaurant_name}}</view>
+          </view>
+          <view class="lower-center">
+            <view style="display: flex">
+              <image src="/images/calendar.svg" class="card-icon"></image>
+              <view class="preview" name="date">{{booking.slot.date}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="section">
+        <view class="slot">I'm booked</view>
+        <view bindtap="goToConfirmedBooking" class="bookingDetails "wx:for="{{user.bookings}}" wx:for-item="booking" data-id="{{booking.id}}" style="margin-bottom: 20rpx;">
+          <view class="lower-center">
+            <view class="fork" style="display: flex">
+              <image src="/images/restaurant-11.svg" class="card-icon"></image>
+              <view class="preview" name="restaurant_name">{{booking.slot.restaurant_name}}</view>
+          </view>
+          <view class="lower-center">
+            <view style="display: flex">
+              <image src="/images/calendar.svg" class="card-icon"></image>
+              <view class="preview" name="date">{{booking.slot.date}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
