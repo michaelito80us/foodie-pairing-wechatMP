@@ -42,15 +42,13 @@ Page({
     // wx.showLoading({
     //   title: 'Loading..',
     // })
-    // const userId = getApp().globalData.userId
+    const userId = getApp().globalData.userId
   
-    // const url = `http://localhost:3000/api/v1/users/${userId}`
-    const url = `http://localhost:3000/api/v1/users/4`
+    const url = getApp().getHost() + `users/${userId}`
     wx.request({
       url: url, 
       method: 'GET',
       success(res){
-        console.log(res, "dfd")
         that.setData({
           user: res.data.user
           // restaurant_name: res.user.pendingbookings.restaurant_name,

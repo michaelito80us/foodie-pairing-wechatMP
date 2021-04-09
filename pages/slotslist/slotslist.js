@@ -1,5 +1,4 @@
 const app = getApp()
-const url = getApp().getHost() + app.globalData.api
 // pages/slotslist/slotslist.js
 Page({
 
@@ -43,11 +42,9 @@ Page({
    */
   onShow: function () {
     let page = this;
-    console.log(123, url)
+    const url = getApp().getHost()
     let userId = getApp().globalData.userId
-    
     console.log('ID= ', userId)
-    
     wx.request({
       url:`${url}slots`,
       method: 'GET',
