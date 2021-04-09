@@ -6,6 +6,10 @@
   border-radius: 50%;
 }
 
+/* .section {
+  align-items: left;
+} */
+
 .card-product {
   margin-top: 20rpx;
   overflow: hidden;
