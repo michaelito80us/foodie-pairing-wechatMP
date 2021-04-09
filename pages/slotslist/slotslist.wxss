@@ -12,12 +12,17 @@
 
 .card-product {
   margin-top: 20rpx;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
   overflow: hidden;
   height: 120px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  border-radius: 15px;
+  box-sizing: border-box;
+  border: 1px solid #D8D8D8;
 }
 .btn-area{
   display: flex;
