@@ -19,18 +19,19 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
-  requestToJoin(data) {
+  formSubmit: function (data) {
     const id = this.options.id
     const page = this
     console.log('this:',this)
     console.log('options',this.options)
-    console.log(id)
-    console.log('data: ', __data__.slot.user.id)
+    console.log('form data',data)
+    const slotUserId = data.detail.value.slotuserid
+    console.log('slot_user_id: ',slotUserId)
 
     wx.request({
       url: `${url}users/${getApp().globalData.userId}/bookings`,
       method: 'POST',
-      data: {slot_id: id, user_id: getApp().globalData.userId},
+      data: {slot_id: id, user_id: slotUserId},
       success(res) {
         console.log('update res',res)
         if (res.statusCode == 200) {

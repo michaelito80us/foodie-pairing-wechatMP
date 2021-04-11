@@ -65,10 +65,12 @@
       <text style="padding: 10rpx">{{slot.message||'-'}}</text>
     </view>
   </view>
-
-  <view class="btn-area">
-    <button bindtap="requestToJoin" data-slotuserid="{{slot.user.id}}" size='mini' style='background-color: yellow' form-type="submit">Request to join</button>
-  </view>
+  <form bindsubmit="formSubmit" >
+    <input type="text" name="slotuserid" value="{{slot.user.id}}" hidden="true" />
+    <view class="btn-area">
+      <button size='mini' style='background-color: yellow' form-type="submit">Request to join</button>
+    </view>
+  </form>
 
   <view style="height: 100rpx;"></view>
 </view>
