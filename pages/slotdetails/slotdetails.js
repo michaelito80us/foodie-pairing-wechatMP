@@ -19,8 +19,7 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
-  requestToJoin() {
-
+  formSubmit: function (data) {
     const id = this.options.id
     const page = this
     console.log('this:',this)
@@ -32,7 +31,7 @@ Page({
       method: 'POST',
       data: {slot_id: id, user_id: getApp().globalData.userId},
       success(res) {
-        console.log('update res', res)
+        console.log('update res',res)
         if (res.statusCode == 200) {
           wx.showToast({
             title: 'Request sent',
@@ -79,11 +78,12 @@ Page({
       url:`${url}/slots/${id}`,
       method: 'GET',
       success(res){
-        console.log(res)
+        console.log("show_res",res)
         //page.setData({slot: res.data.slot})
         page.setData(res.data)
       }
     })
+    console.log(page)
   },
 
   /**
