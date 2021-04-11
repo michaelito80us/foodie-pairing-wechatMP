@@ -3,20 +3,23 @@
   <view class="card-product" bindtap="goToSlotDetails" wx:for="{{slots}}" wx:for-item="slot" data-id="{{slot.id}}">
     <!-- <image src="slot.restaurant_photo" /> -->
     <view class="card-product-infos">
+      <view >
+        <image src="{{slot.photo}} " class="slot-image" style="margin: 18% 0 18% 16%;"></image>
+      </view>
       <view class="lower-center">
         <view class="section">
           <image src="/images/restaurant.svg" class="card-icon"></image>
-          <view>{{slot.restaurant_name}}</view>
+          <view style="padding-left: 11rpx">{{slot.restaurant_name}}</view>
         </view>
 
         <view class="section">
           <image src="/images/calendar.svg" class="card-icon"></image>
-          <view>{{slot.time}}   -   {{slot.date}}</view>
+          <view style="padding-left: 10rpx">{{slot.date}} - {{slot.time}}</view>
         </view>
 
         <view class="section">
           <image src="/images/location.svg" class="card-icon"></image>
-          <view>{{slot.restaurant_address}}</view>
+          <view style="padding-left: 11rpx">{{slot.restaurant_address}}</view>
         </view>
       </view>
     </view>
