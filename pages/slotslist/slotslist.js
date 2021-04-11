@@ -44,7 +44,7 @@ Page({
     let page = this;
     const url = getApp().getHost()
     let userId = getApp().globalData.userId
-    console.log('ID= ', userId)
+    console.log('current userID= ', userId)
     wx.request({
       url:`${url}slots`,
       method: 'GET',

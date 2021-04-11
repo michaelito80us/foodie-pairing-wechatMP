@@ -30,7 +30,7 @@
         <view bindtap="goToConfirmedBooking" class="bookingDetails "wx:for="{{user.bookings}}" wx:for-item="booking" data-id="{{booking.id}}" style="margin-bottom: 20rpx;">
           <view class="lower-center">
             <view class="fork" style="display: flex">
-              <image src="/images/restaurant-11.svg" class="card-icon"></image>
+              <image src="/images/restaurant.svg" class="card-icon"></image>
               <view class="preview" name="restaurant_name">{{booking.slot.restaurant_name}}</view>
           </view>
           <view class="lower-center">

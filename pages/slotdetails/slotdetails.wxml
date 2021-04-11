@@ -36,7 +36,7 @@
     </view>
 
     <view class="form-row">
-      <view>Self-introduction: {{slot.user.self-introduction}}</view>
+      <view>Self-introduction: {{slot.user.self_introduction}}</view>
     </view>
   </view>
     
@@ -52,7 +52,7 @@
 
     <view class="section">
       <image src="/images/calendar.svg" class="slot-details-icon"></image>
-      <text style="padding: 20rpx">{{slot.time}}{{slot.date}}</text>
+      <text style="padding: 10rpx">{{slot.date}} - {{slot.time}}</text>
     </view>
 
     <view class="section">
@@ -66,6 +66,7 @@
     </view>
   </view>
   <form bindsubmit="formSubmit" >
+    <input type="text" name="slotuserid" value="{{slot.user.id}}" hidden="true" />
     <view class="btn-area">
       <button size='mini' style='background-color: yellow' form-type="submit">Request to join</button>
     </view>

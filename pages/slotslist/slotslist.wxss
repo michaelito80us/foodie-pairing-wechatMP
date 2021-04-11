@@ -30,7 +30,7 @@ page {
   /* margin-left: 15rpx;
   margin-right: 15rpx; */
   box-sizing: border-box;
-  padding: 50rpx 40rpx;
+  padding: 60rpx 10rpx 40rpx 10rpx;
   overflow: hidden;
   height: 120px;
   background: white;
@@ -53,4 +53,23 @@ page {
   padding-bottom: 5px;
 }
 
+.lower-center {
+  margin-left: 50rpx;
+}
+
+.card-product-infos {
+  display: flex;
+  padding: 5% 0;
+}
+
+.slot-image {
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.slot-image image {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 18% 0 18% 16%; 
+}
 
